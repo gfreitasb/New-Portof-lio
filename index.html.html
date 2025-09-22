@@ -60,6 +60,9 @@
     }
 
     header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
       padding: 30px 20px;
     }
@@ -71,6 +74,7 @@
       object-fit: cover;
       border: 4px solid #004080;
       margin-bottom: 15px;
+      display: block;
     }
 
     section {
@@ -232,7 +236,7 @@
   <button class="toggle-theme" onclick="toggleTheme()">🌙 / ☀️</button>
 
   <header>
-    <img src="My photo 02.jpeg" alt="Gabriel de Freitas Brito" class="profile-photo" />
+    <img src="My photo 02.jpg" alt="Gabriel de Freitas Brito" class="profile-photo" />
     <h1>Gabriel de Freitas Brito</h1>
     <p id="subtitle"></p>
     <div class="contact-buttons">
