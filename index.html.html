@@ -73,11 +73,10 @@
     }
 
     #subtitle {
-      display: inline-block;
-      min-height: 24px;
-      border-right: 2px solid #004080;
-      white-space: nowrap;
-      overflow: hidden;
+      display: block;
+      font-size: 18px;
+      color: #00bfff;
+      margin-bottom: 10px;
     }
 
     section {
@@ -239,7 +238,7 @@
   <header>
     <img src="My photo.jpeg" alt="Gabriel de Freitas Brito" class="profile-photo" />
     <h1>Gabriel de Freitas Brito</h1>
-    <p id="subtitle"></p>
+    <p id="subtitle">Analista de Suporte SR N2 - Field Service</p>
     <div class="contact-buttons">
       <a href="mailto:gabriel.f.brito7@gmail.com"><i class="fas fa-envelope"></i>Email</a>
       <a href="tel:+5583987934272"><i class="fas fa-phone-alt"></i>Telefone</a>
@@ -268,6 +267,19 @@
         <li>Gerenciamento de ferramentas de monitoramento online das interfaces da rede (SolarWinds e Grafana).</li>
         <li>Gerenciamento de infraestrutura crítica: Active Directory, servidores DNS/DHCP e Políticas de Grupo (GPO).</li>
         <li>Gerenciamento de servidor DHCP e DNS através do controle de acessos das estações via ranges de IP's (IPv4 e IPv6).</li>
+      </ul>
+
+      <h3>Stefanini Group</h3>
+      <h3>Analista de Suporte Sênior N2 (10/2025 - o momento)</h3>
+      <ul>
+      <li>Atendimento de chamados de segundo nível (N2), realizando análise e resolução de incidentes complexos de hardware, software e rede.</li>
+      <li>Instalação, configuração e manutenção de sistemas operacionais Windows e aplicações corporativas em estações de trabalho e notebooks.</li>
+      <li>Suporte presencial (Field Service) a usuários e equipamentos, garantindo a continuidade operacional dos serviços críticos.</li>
+      <li>Gerenciamento de infraestrutura crítica, incluindo Active Directory.</li>
+      <li>Execução de Scripts de rotina via KACE, restauração e monitoramento de desempenho em ambientes corporativos.</li>
+      <li>Apoio em projetos de implantação, migração e atualização de sistemas e estações de trabalho.</li>
+      <li>Documentação técnica e elaboração de relatórios de atendimento e desempenho.</li>
+      <li>Atuação colaborativa com as equipes de N1 e N3 para garantir a eficiência no tratamento de incidentes e problemas recorrentes.</li>
       </ul>
     </div>
   </section>
@@ -339,27 +351,6 @@
         }
       });
     });
-
-    // Efeito de digitação otimizado (sem relayout)
-    const roles = ["Desenvolvedor Back-End", "Suporte e Infraestrutura de TI", "SQL", "PostgreSQL", "Java", "Python"];
-    let i = 0, j = 0, isDeleting = false;
-    const subtitle = document.getElementById("subtitle");
-
-    function typeEffect() {
-      const current = roles[i];
-      subtitle.textContent = current.substring(0, j) + " ";
-      if (!isDeleting && j++ === current.length) {
-        isDeleting = true;
-        setTimeout(typeEffect, 1200);
-      } else if (isDeleting && j-- === 0) {
-        isDeleting = false;
-        i = (i + 1) % roles.length;
-        setTimeout(typeEffect, 200);
-      } else {
-        setTimeout(typeEffect, isDeleting ? 50 : 100);
-      }
-    }
-    typeEffect();
 
     // Modal
     function openModal(title) {
