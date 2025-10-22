@@ -40,7 +40,6 @@
       color: var(--text-color-light);
     }
 
-    /* Fundo com linhas espaciais */
     body::before {
       content: "";
       position: fixed;
@@ -60,9 +59,6 @@
     }
 
     header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       text-align: center;
       padding: 30px 20px;
     }
@@ -74,7 +70,14 @@
       object-fit: cover;
       border: 4px solid #004080;
       margin-bottom: 15px;
-      display: block;
+    }
+
+    #subtitle {
+      display: inline-block;
+      min-height: 24px;
+      border-right: 2px solid #004080;
+      white-space: nowrap;
+      overflow: hidden;
     }
 
     section {
@@ -151,7 +154,6 @@
       background: var(--button-bg-light);
     }
 
-    /* Timeline Experiência */
     .timeline {
       position: relative;
       margin: 20px 0;
@@ -184,7 +186,6 @@
       top: 5px;
     }
 
-    /* Modal */
     .modal {
       display: none;
       position: fixed;
@@ -213,7 +214,6 @@
       color: #333;
     }
 
-    /* Scroll progress bar */
     #progress-container {
       position: fixed;
       top: 0;
@@ -223,6 +223,7 @@
       background: rgba(255,255,255,0.1);
       z-index: 2000;
     }
+
     #progress-bar {
       height: 5px;
       width: 0%;
@@ -236,7 +237,7 @@
   <button class="toggle-theme" onclick="toggleTheme()">🌙 / ☀️</button>
 
   <header>
-    <img src="My photo 02.jpg" alt="Gabriel de Freitas Brito" class="profile-photo" />
+    <img src="My photo.jpeg" alt="Gabriel de Freitas Brito" class="profile-photo" />
     <h1>Gabriel de Freitas Brito</h1>
     <p id="subtitle"></p>
     <div class="contact-buttons">
@@ -251,27 +252,23 @@
     <p>Com sólida experiência no ramo de Tecnologia da Informação, iniciei minha trajetória profissional como técnico de suporte e infraestrutura Pleno.</p>
     <p>Possuo proficiência em gerenciamento de Data Center, administração de servidores, suporte técnico especializado e manutenção de ambientes corporativos de TI.</p>
     <p>Destaca-se pela atuação em empresas parceiras, adaptando soluções a diferentes contextos organizacionais e gerenciando recursos críticos como Active Directory, DNS/DHCP e GPO.</p>
-    <p>Também possui conhecimentos em SQL e com foco a excelência, inovação e melhoria contínua dos processos de em que gerencio.</p>
+    <p>Também possuo conhecimentos em SQL e foco na excelência, inovação e melhoria contínua dos processos que gerencio.</p>
   </section>
 
   <section>
     <h2>Experiência Profissional</h2>
     <div class="timeline">
-     <h3>AeC Contact Center</h3>
-        <h3>Técnico de Suporte e Infraestrutura de TI - Pleno (01/2024 - 03/2025)</h3>
-        <ul>
-          <li>Gerenciamento de ambientes de Data Center com foco em estabilidade, performance e segurança.</li>
-          <li>Administração e manutenção de servidores em diversos cenários corporativos.
-</li>
-          <li>Suporte técnico especializado para usuários e sistemas via Service Desk, garantindo a continuidade operacional.
-</li>
-          <li>Estruturação e manutenção de ambientes de TI em empresas parceiras, adaptando soluções conforme demandas específicas.</li>
-          <li>Gerenciamento de ferramentas de monitoramento online das interfaces da rede (SolarWinds e Grafana).
-</li>
-<li>Gerenciamento de infraestrutura crítica: Active Directory, servidores DNS/DHCP e Políticas de Grupo (GPO).</li>
-<li>Gerenciamento de servidor DHCP e DNS através do controle de acessos das estacões via ranges de IP's (IPv4 e IPv6).</li>
-        </ul>
-      </div>
+      <h3>AeC Contact Center</h3>
+      <h3>Técnico de Suporte e Infraestrutura de TI - Pleno (01/2024 - 03/2025)</h3>
+      <ul>
+        <li>Gerenciamento de ambientes de Data Center com foco em estabilidade, performance e segurança.</li>
+        <li>Administração e manutenção de servidores em diversos cenários corporativos.</li>
+        <li>Suporte técnico especializado para usuários e sistemas via Service Desk, garantindo a continuidade operacional.</li>
+        <li>Estruturação e manutenção de ambientes de TI em empresas parceiras, adaptando soluções conforme demandas específicas.</li>
+        <li>Gerenciamento de ferramentas de monitoramento online das interfaces da rede (SolarWinds e Grafana).</li>
+        <li>Gerenciamento de infraestrutura crítica: Active Directory, servidores DNS/DHCP e Políticas de Grupo (GPO).</li>
+        <li>Gerenciamento de servidor DHCP e DNS através do controle de acessos das estações via ranges de IP's (IPv4 e IPv6).</li>
+      </ul>
     </div>
   </section>
 
@@ -279,7 +276,6 @@
     <h2>Formação</h2>
     <p>Análise e Desenvolvimento de Sistemas - Faculdade Estácio</p>
   </section>
-
 
   <section>
     <h2>Hard Skills</h2>
@@ -301,29 +297,6 @@
     </ul>
   </section>
 
-
-  <section>
-    <h2>Projetos</h2>
-    <div class="timeline">
-        <h3>Sistema de Controle de Estoque</h3>
-        <p>Aplicação backend desenvolvida em <strong>Java 17 + Spring Boot 3</strong> 
-           para gerenciar produtos, fornecedores e movimentações de estoque.</p>
-        <ul>
-          <li>Cadastro de produtos e fornecedores</li>
-          <li>Movimentações de entrada/saída</li>
-          <li>Upload de CSV para importação em lote</li>
-          <li>Documentação da API com Swagger UI</li>
-        </ul>
-        <p>
-          🔗 <a href="https://github.com/SEU-USUARIO/estoque-sistema-com-readme" target="_blank">
-            Ver no GitHub
-          </a>
-        </p>
-      </div>
-    </div>
-  </section>
-
-
   <section>
     <h2>Certificações</h2>
     <ul>
@@ -334,12 +307,10 @@
     </ul>
   </section>
 
-
   <footer>
     &copy; 2025 Gabriel de Freitas Brito. Todos os direitos reservados.
   </footer>
 
-  <!-- Modal -->
   <div id="modal" class="modal">
     <div class="modal-content">
       <span class="close-btn" onclick="closeModal()">&times;</span>
@@ -354,51 +325,43 @@
       document.body.classList.toggle('light');
     }
 
-    // GSAP animações ao rolar
+    // GSAP: anima apenas uma vez
     gsap.registerPlugin(ScrollTrigger);
-    gsap.utils.toArray("section").forEach((section) => {
+    gsap.utils.toArray("section").forEach(section => {
       gsap.to(section, {
+        opacity: 1,
+        y: 0,
+        duration: 1,
         scrollTrigger: {
           trigger: section,
           start: "top 80%",
-        },
-        opacity: 1,
-        y: 0,
-        duration: 1
+          toggleActions: "play none none none"
+        }
       });
     });
 
-    // Máquina de escrever
+    // Efeito de digitação otimizado (sem relayout)
     const roles = ["Desenvolvedor Back-End", "Suporte e Infraestrutura de TI", "SQL", "PostgreSQL", "Java", "Python"];
-    let i = 0, j = 0;
-    let currentRole = "";
-    let isDeleting = false;
+    let i = 0, j = 0, isDeleting = false;
     const subtitle = document.getElementById("subtitle");
 
     function typeEffect() {
-      if (i < roles.length) {
-        if (!isDeleting && j <= roles[i].length) {
-          currentRole = roles[i].substring(0, j++);
-          subtitle.textContent = currentRole;
-        } else if (isDeleting && j >= 0) {
-          currentRole = roles[i].substring(0, j--);
-          subtitle.textContent = currentRole;
-        }
-        if (j === roles[i].length + 1) {
-          isDeleting = true;
-          setTimeout(typeEffect, 1000);
-          return;
-        } else if (j === 0 && isDeleting) {
-          isDeleting = false;
-          i++;
-          if (i === roles.length) i = 0;
-        }
+      const current = roles[i];
+      subtitle.textContent = current.substring(0, j) + " ";
+      if (!isDeleting && j++ === current.length) {
+        isDeleting = true;
+        setTimeout(typeEffect, 1200);
+      } else if (isDeleting && j-- === 0) {
+        isDeleting = false;
+        i = (i + 1) % roles.length;
+        setTimeout(typeEffect, 200);
+      } else {
+        setTimeout(typeEffect, isDeleting ? 50 : 100);
       }
-      setTimeout(typeEffect, isDeleting ? 50 : 100);
     }
     typeEffect();
 
-    // Modal Certificações
+    // Modal
     function openModal(title) {
       document.getElementById("modal").style.display = "flex";
       document.getElementById("modal-title").textContent = title;
@@ -408,13 +371,13 @@
       document.getElementById("modal").style.display = "none";
     }
 
-    // Scroll progress bar
-    window.onscroll = function() {
-      let winScroll = document.documentElement.scrollTop || document.body.scrollTop;
-      let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      let scrolled = (winScroll / height) * 100;
+    // Barra de progresso do scroll
+    window.addEventListener("scroll", () => {
+      const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
       document.getElementById("progress-bar").style.width = scrolled + "%";
-    };
+    });
   </script>
 </body>
 </html>
