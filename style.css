@@ -115,6 +115,16 @@
       transform: scale(1.05);
     }
 
+
+    .contact-buttons a i.fa-github {
+  font-size: 20px;
+}
+
+.contact-buttons a:hover i.fa-github {
+  transform: scale(1.2);
+  color: #ffffff;
+}
+
     footer {
       text-align: center;
       padding: 15px;
